@@ -1,0 +1,3 @@
+$(function(){
+	$(".shelf").pbShelf();
+});

@@ -1,0 +1,71 @@
+.shelf{
+	position:relative;
+	overflow: hidden;
+}
+.shelf-view{
+	height:100%;
+	width:100%;
+	position:absolute;
+	overflow: hidden;
+}
+.shelf-item{
+	float:left;
+}
+.shelf-item img{
+	max-width:100%;
+}
+.shelf-arrow{
+	position:relative;
+	z-index:999;
+}
+.shelf-arrow,
+.shelf-arrow:hover,
+.shelf-arrow:active,
+.shelf-arrow:visited,
+.shelf-arrow:link{
+	
+}
+.shelf-arrow-right{
+	
+}
+.shelf-arrow-left{
+}
+.shelf-arrow-right:before{
+	
+}
+.shelf-arrow-left:before{
+	
+}
+.touch .shelf-arrow{
+	display:none;
+}
+.shelf-step{
+	position:relative;
+	z-index:999;
+}
+.no-touch .shelf-step{
+	
+}
+
+.shelf-step li {
+    float: left;
+    list-style:none;
+}
+.shelf-step a {
+    float: left;
+    width: 10px;
+    height: 10px;
+    background:#c7c7c7;
+    border-radius: 6px;
+}
+.shelf-step .shelf-step-cur{
+	background:#AF9BA0;
+}
+.whole-shelf {
+    overflow: hidden;
+    width: 5000px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
