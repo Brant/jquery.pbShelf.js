@@ -45,6 +45,8 @@
 		
 		return this.each(function(){
 			
+			alert("Hello, there!");
+			
 			if (options){
 				$.extend(settings, options);
 			}
