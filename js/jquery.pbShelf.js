@@ -100,7 +100,8 @@
 			 * (otherwise it compresses when elements are removed)
 			 */
 			shelf.height(shelf.height());
-						
+			
+			
 			/*
 			 * If the shelf has a select box,
 			 * bind the on-change event to reset the plugin
