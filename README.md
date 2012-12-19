@@ -2,5 +2,5 @@ PB Shelf
 ========
 
 ## Sugested Stuff
-- Modernizr
+- Modernizr (for touch detection)
 - jquery easing
