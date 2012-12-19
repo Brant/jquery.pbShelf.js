@@ -14,10 +14,12 @@
 .shelf-item img{
 	max-width:100%;
 }
+
 .shelf-arrow{
-	position:relative;
+	
 	z-index:999;
 }
+
 .shelf-arrow,
 .shelf-arrow:hover,
 .shelf-arrow:active,
@@ -40,7 +42,7 @@
 	display:none;
 }
 .shelf-step{
-	position:relative;
+	
 	z-index:999;
 }
 .no-touch .shelf-step{
