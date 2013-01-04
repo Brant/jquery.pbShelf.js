@@ -40,7 +40,8 @@
 			"positionShelfSteps"	:		true,
 			"ajaxLoaderImage"		:		"img/ajax-loading.gif",
 			"easeFunction"			:		"easeOutCirc",
-			"rubberBandStrength"	:		3
+			"rubberBandStrength"	:		3,
+			"alreadyWrapped"		:		false
 		};
 		
 		
@@ -211,10 +212,17 @@
 					 * Wrap all the shelf items,
 					 * create a "field of vision"
 					 */
-					shelf.find(settings.shelfItem).wrapAll("<div class='whole-shelf'/>");
-					wholeShelf = shelf.find(".whole-shelf");
-					wholeShelf.wrap("<div class='shelf-view'/>");
-					wholeShelf.width(maxWidth + 100);
+					if(settings.alreadyWrapped){
+						wholeShelf = shelf.find(".whole-shelf");
+						wholeShelf.width(maxWidth + 100);
+					}
+					else{
+						shelf.find(settings.shelfItem).wrapAll("<div class='whole-shelf'/>");
+						wholeShelf = shelf.find(".whole-shelf");
+						wholeShelf.wrap("<div class='shelf-view'/>");
+						wholeShelf.width(maxWidth + 100);	
+					}
+					
 					
 					
 					/*
